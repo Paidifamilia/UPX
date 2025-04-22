@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Finance - Organizador Financeiro</title>
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo-container">
+            <div class="logo-text">Safe Finance</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Início</a></li>
+            <li><a href="about.html" onclick="showPage('about')">Sobre</a></li>
+            <li><a href="team.html" onclick="showPage('team')">Autores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Conteúdo Principal -->
+<main>
+    <!-- Página Início -->
+    <section id="home" class="page active">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Organize suas finanças com a Safe Finance</h1>
+                    <p>A Safe Finance é um aplicativo desenvolvido com o objetivo principal de auxiliar na gestão financeira, de maneira intuitiva e prática. Seu design visa atender a públicos que não possuem conhecimentos prévios sobre o uso de aplicativos bancários ou planilhas de Excel, proporcionando uma experiência acessível e eficiente para o controle financeiro.
+                    </p>
+                    <p>Com nossa plataforma intuitiva, você pode registrar todas as suas transações, categorizar gastos, estabelecer orçamentos e acompanhar sua evolução financeira através de gráficos e relatórios detalhados.</p>
+                    <p>Não deixe que a falta de organização e dívidas comprometa suas metas financeiras. O Safe Finance está aqui para simplificar sua vida financeira e ajudar você a alcançar seus objetivos.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Controle financeiro">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Safe Finance. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<style>
+    /* Estilos Globais */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        background-color: white;
+        color: #213133;
+        line-height: 1.6;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    /* Cabeçalho */
+    header {
+        background-color: #213133;
+        padding: 1rem 2rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-text {
+        color: #50c8a8;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-links li {
+        margin-left: 2rem;
+        position: relative;
+    }
+    
+    .nav-links a {
+        color: #50c8a8;
+        font-weight: 500;
+        transition: all 0.3s;
+        display: inline-block;
+    }
+    
+    .nav-links a:hover {
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    /* Conteúdo Principal */
+    main {
+        margin-top: 80px;
+        min-height: calc(100vh - 160px);
+    }
+    
+    /* Página Início */
+    .hero {
+        display: flex;
+        align-items: center;
+        padding: 4rem 0;
+    }
+    
+    .hero-text {
+        flex: 1;
+        padding-right: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #213133;
+    }
+    
+    .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        color: #555;
+    }
+    
+    .hero-image {
+        flex: 1;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Página Contatos */
+    .contact-section {
+        padding: 4rem 0;
+        text-align: center;
+    }
+    
+    .contact-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #213133;
+    }
+    
+    .instagram-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    .instagram-contact i {
+        font-size: 2rem;
+        color: #213133;
+        margin-right: 1rem;
+    }
+    
+    .instagram-input {
+        padding: 0.8rem 1rem;
+        border: 2px solid #50c8a8;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 300px;
+        max-width: 100%;
+    }
+    
+    /* Rodapé */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    /* Classes utilitárias */
+    .text-center {
+        text-align: center;
+    }
+    
+    .mt-2 {
+        margin-top: 2rem;
+    }
+    
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+    
+    /* Estilos para as páginas escondidas */
+    .page {
+        display: none;
+    }
+    
+    .page.active {
+        display: block;
+    }
+
+        /* Estilos base (mobile first) */
+body {
+  font-size: 16px;
+}
+
+/* Tablets (768px ou mais) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .hero {
+    flex-direction: row; /* Altera de coluna para linha */
+  }
+}
+
+/* Desktop (1024px ou mais) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Telas muito grandes (1440px ou mais) */
+@media (min-width: 1440px) {
+  .hero-image img {
+    max-width: 800px;
+  }
+}
+</style>
+
+<script>
+    // Função para alternar entre páginas
+    function showPage(pageId) {
+        // Esconde todas as páginas
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+        
+        // Mostra a página selecionada
+        document.getElementById(pageId).classList.add('active');
+        
+        // Rola para o topo da página
+        window.scrollTo(0, 0);
+    }
+</script>
+</body>
+</html>
